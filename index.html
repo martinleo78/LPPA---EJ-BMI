@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./JS/scripts.js"></script>
+    <title>Calculadora BMI</title>
+</head>
+
+<body>
+    <div>
+        <h3>Para calcular su índice de masa corporal, ingrese su estatura y peso</h3>
+        <table>
+            <tr>
+                <th class="grisecito">Sistema métrico</th>
+                <th class="grisecito"></th>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Estatura</h3>
+                    <h4 class="grisecito">en centímetros</h4>
+                    <input type="number" id="estatura" value="0">
+                </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h3>Peso</h3>
+                    <h4 class="grisecito">en kilogramos</h4>
+                    <input type="number" id="peso" value="0">
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="calcular()">Calcular</button>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Resultado:</td>
+                <td><label id="resultado_BMI"></label></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table class="tabla_lineas">
+            <tr id="tabla_titulos" class="oculta">
+                <th>
+                    <b>Composición corporal</b>
+                </th>
+                <th>
+                    <b>Índice de masa corporal (IMC)</b>
+                </th>
+            </tr>
+            <tr id="tabla_inferior" class="oculta">
+                <td>Peso inferior al normal</td>
+                <td>Menosde 18.5</td>
+            </tr>
+            <tr id="tabla_normal" class="oculta">
+                <td>Normal</td>
+                <td>18.5 - 24.9</td>
+            </tr>
+            <tr id="tabla_superior" class="oculta">
+                <td>Peso superior al normal</td>
+                <td>25.0 - 29.9</td>
+            </tr>
+            <tr id="tabla_obesidad" class="oculta">
+                <td>Obesidad</td>
+                <td>Más de 30.0</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
